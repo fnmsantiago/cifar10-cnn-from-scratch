@@ -1,6 +1,9 @@
 numpy
 matplotlib
 scikit-learn
+# CPU-only install (avoids pulling the multi-GB CUDA wheels):
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
+# torchvision also loads CIFAR-10 in src/utils.py from Phase 1 onward.
 torch
 torchvision
 pytest
